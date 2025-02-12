@@ -2,7 +2,7 @@ name: ARXIV papers daily on your TOPIC
 
 on:
   schedule:
-    - cron: 30 8 * * *
+    - cron: 59 14 * * *
 
 jobs:
   send-event:
