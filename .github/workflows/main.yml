@@ -2,7 +2,7 @@ name: ARXIV papers daily on your TOPIC
 
 on:
   schedule:
-    - cron: '30 15 * * *'
+    - cron: 30 8 * * *
 
 jobs:
   send-event:
@@ -11,6 +11,6 @@ jobs:
     steps:
       - uses: junka/arxiv_feishu_bot_action@main
         with:
-          keyword: 'artificial intelligence' # topics for you
+          keyword: 'CVPR' # topics for you
           webhook: ${{ secrets.FEISHU_BOT_WEBHOOK }}
           signkey: ${{ secrets.FEISHU_BOT_SIGNKEY }}
