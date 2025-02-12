@@ -11,6 +11,6 @@ jobs:
     steps:
       - uses: junka/arxiv_feishu_bot_action@main
         with:
-          keyword: 'artifical intelligence' # topics for you
+          keyword: 'artificial intelligence' # topics for you
           webhook: ${{ secrets.FEISHU_BOT_WEBHOOK }}
           signkey: ${{ secrets.FEISHU_BOT_SIGNKEY }}
